@@ -13,7 +13,7 @@ def Setup():
 			print("Something is amiss! ")
 			break
 		elif int(p) <= 0 or int(p) > lengthOfBridge:
-			print("Wrong position was inputted...The val should be in the range of (1, lengthOfBridge)")
+			raise ValueError("Wrong position was inputted...The val should be in the range of (1, lengthOfBridge)")
 			return 1 
 
 	for z in range(numOfZombies):

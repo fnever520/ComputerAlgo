@@ -2,7 +2,7 @@ import time
 from bitarray import bitarray
 
 def main():
-	start = time.time()
+	start = time.clock()
 	result = 0 
 	n = 99999
 	x = int(input("Please enter a number: "))
@@ -14,7 +14,7 @@ def main():
 				break
 		output = bitarray(str(result))
 		print("Output : ", output.count(1))
-		print("Time taken is {} sec".format(time.time()-start))
+		print("Time taken is {} sec".format(time.clock()-start))
 
 '''
 	array = [None] * n
