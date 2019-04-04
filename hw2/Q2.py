@@ -33,14 +33,6 @@ def main():
 		print("the decimal is ", output.count('1'))
 		print("time taken is ", time.time()-start)
 
-		'''
-# def check(n):
-# 	result = 0 
-# 	for x in range(0,n):
-# 		y = 1*10**x
-# 		result += y
-# 	print("The result is ", result)
-# 	print("the decimal is ", int(str(result), 2))
-
+'''
 if __name__ == '__main__':
 	main()
