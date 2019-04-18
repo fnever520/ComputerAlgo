@@ -10,21 +10,21 @@ def main():
     print(even)
     print(odd)
     for x in range(2,candy,2):
-        even = getEvenSets(even, x)
+        even = evenPower(even, x)
         if (candy -1 ==0):
             possibility += even
         else:
-            # odd = getPowerFromSets(odd, candy - x)
+            # odd = power(odd, candy - x)
             odd = 1
             print(type(even))
             print(type(odd))
             possibility += even * odd * ((candy -x)*x +1)
     print(even)
     print(odd)
-    odd = getPowerFromSets(odd, candy)
+    odd = power(odd, candy)
     possibility+=odd
 
-def getPowerFromSets(odd, power):
+def power(odd, power):
     if (power ==0):
         return 0
     if(odd[power] ==0):
@@ -34,7 +34,7 @@ def getPowerFromSets(odd, power):
 
     return result
 
-def getEvenSets(even, index):
+def evenPower(even, index):
     if (even[index]==0) :
         if ((index/2)%2 ==0):
             even = math.pow(2, index/2)*2
