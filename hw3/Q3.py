@@ -4,11 +4,8 @@ def main():
     candy = 10
     odd = [None for x in range(20)]
     even = [None for x in range(20)]
-
-    even[2] =2
     possibility = 0
-    print(even)
-    print(odd)
+
     for x in range(2,candy,2):
         even = evenPower(even, x)
         if (candy -1 ==0):
