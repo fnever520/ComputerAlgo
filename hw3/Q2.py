@@ -1,7 +1,7 @@
 import time
 from sys import maxsize
 
-def maxSubArraySum(a,size): 
+def maxSubArray(a,size): 
   
     currentMax = -maxsize - 1
     max_ending_here = 0
@@ -36,5 +36,5 @@ for i in data.split(" "):
     x+=1
 
 startTime = time.time()
-maxSubArraySum(a,len(a))
+maxSubArray(a,len(a))
 print("Total elapsed time: %.4f seconds" %(time.time()- startTime))
