@@ -8,7 +8,7 @@ def matrixMul(a, power):
         return 1
     elif (power == 2):
         return (np.dot(a,a))%100000
-    elif not (power%2):
+    elif (power%2 == 0):
         power /= 2
         ccc = matrixMul(matrixMul(a,power), 2)
         print("ccc", ccc)
