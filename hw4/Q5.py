@@ -14,7 +14,7 @@ graph2 = [[0,1,1,0],\
           [1,0,0,0]]
 
 graph = graph2
-k = 0
+k = 2
 
 def numOutputPath(graphLength_k):
     sum = 0 
@@ -43,7 +43,7 @@ if (k == 0):
 else:
     resultant_matrix = matrixMul(graph,k)
     graphLength_k = resultant_matrix.tolist()
-    # print(graphLength_k)
+    print(graphLength_k)
 
 print("Output: ", numOutputPath(graphLength_k))
 print("Elapsed time: %.4f seconds" %(time.time()-startTime))
