@@ -60,7 +60,7 @@ class Graph:
   
         # Create V subsets with single elements 
         #Todo
-        for node in range(self.V + numMen): 
+        for node in range(self.V+1): 
             parent.append(node) 
             rank.append(0) 
 
@@ -102,7 +102,6 @@ numMen = 5
 numWomen = 5
 
 # first input
-
 g1 = Graph(8) 
 g1.addEdge(0, 0, 6590) 
 g1.addEdge(0, 1, 3073) 
@@ -112,7 +111,7 @@ g1.addEdge(2,2,789)
 g1.addEdge(3,3,975) 
 g1.addEdge(4,2,204) 
 g1.addEdge(4,3,631) 
-# result = g1.KruskalMST() 
+#result = g1.KruskalMST() 
 
 # second input
 g2 = Graph(10)
